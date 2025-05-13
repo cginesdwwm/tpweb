@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Chat-Mallow Café</title>
+    <meta name="description" content="Venez visiter le cat café Chat-Mallow Café à Béthune !">
+    <meta name="author" content="Chloé Gines">
+    <meta name="robots" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/975032478f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="media/icon16.png">
+</head>
+
+<body>
+
+    <!--Création de l'en-tête-->
+    <header>
+        <img src="media/logo_transparent.png" title="Logo du Chat-Mallow Café" alt="Logo Chat-Mallow">
+        <strong>Chat-Mallow Café</strong>
+    </header>
+    <!--Fin de l'en-tête-->
+
+    <!--Création du menu de navigation-->
+    <nav>
+        <a href="index.html" title="Lien page d'accueil" class="nav-active">Accueil</a>
+        <a href="about.html" title="Lien page à propos">Notre histoire</a>
+        <a href="adopter.html" title="Lien page adopter">Coin des coups de cœur</a>
+        <a href="menu.html" title="Lien page menu">Petites douceurs</a>
+        <a href="contact.html" title="Lien page contact">Contactez-nous !</a>
+    </nav>
+    <!--Fin du menu de nav-->
+
+    <!--Création du contenu-->
+    <main>
+
+        <section id="contact" class="text-center">
+
+            <h2>Quelque chose à nous dire ?</h2>
+
+            <form>
+                <label>Nom *</label>
+                <input type="text" required placeholder="Saisissez votre nom...">
+                <label>Prénom</label>
+                <input type="text" placeholder="Saisissez votre prénom...">
+                <label>E-mail *</label>
+                <input type="email" required placeholder="Saisissez votre e-mail...">
+                <label>Téléphone</label>
+                <input type="tel" placeholder="Saisissez votre téléphone...">
+                <label>Message *</label>
+                <textarea required placeholder="Saisissez votre message..." rows="5"></textarea>
+                <div><input type="checkbox" name="check"> En cochant cette case vous acceptez le traitrement de vos
+                    données
+                    personnelles et notre politique de confidentitialité.
+                    <p><i>* Les champs marqués par ce symbole sont obligatoires.</i></p>
+                </div>
+                <input type="submit" class="bouton_form" value="Envoyer">
+            </form>
+        </section>
+    </main>
+    <!--Fin du contenu-->
+
+    <!--Création du pied de page-->
+    <footer>
+        <div class="text-center">
+            <img src="media/logo_transparent.png">
+            <br>
+            <i>Copyright Chat-Mallow Café 2025</i>
+        </div>
+
+        <div>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://bsky.social/about" target="_blank">
+                <i class="fa-brands fa-bluesky fa-2x"></i>
+            </a>
+        </div>
+    </footer>
+    <!--Fin du pied de page-->
+
+</body>
+
+</html>
