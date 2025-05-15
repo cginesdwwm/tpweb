@@ -6,13 +6,6 @@
 | **Bleu gris pastel** | `#CEDDEB` | **Titres, liens ou icônes secondaires** — frais et équilibrant face aux tons chauds.                       |
 | **Brun chat doux**   | `#A8937C` | **Texte principal** ou **logo**, **bordures** — lisible, doux, parfait pour garder une ambiance café cosy. |
 
-coucou
-
-Titres principaux : Baloo 2
-Sous-titres et menus : Poppins Semi-Bold
-Texte courant : Quicksand Regular
-Fredoka*/
-
 /* POLICES */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
 /*  font-family: "Baloo 2", sans-serif; */
@@ -64,7 +57,7 @@ body {
     display: grid;
     gap: 0.25rem 0.25rem;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 250px 1fr 1fr 1fr 1fr 200px;
+    grid-template-rows: 240px 1fr 1fr 1fr 1fr 180px;
     grid-template-areas:
         "nav header header header header header"
         "nav main main main main main"
@@ -323,4 +316,12 @@ textarea {
 
 input[type="checkbox"] {
     width: auto;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
