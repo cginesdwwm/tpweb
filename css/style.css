@@ -56,7 +56,7 @@ body {
     font-size: 1.05rem;
     display: grid;
     gap: 0.25rem 0.25rem;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 250px 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 240px 1fr 1fr 1fr 1fr 180px;
     grid-template-areas:
         "nav header header header header header"
@@ -69,7 +69,6 @@ body {
 }
 
 header {
-
     grid-area: header;
     background-color: #fff1c9;
     display: flex;
@@ -109,7 +108,7 @@ nav a {
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
-    margin: 7%;
+    margin: 5%;
 }
 
 nav a:hover {
@@ -162,10 +161,26 @@ footer img {
     height: 50px;
 }
 
+iframe{
+    border-radius: 12px;
+}
+
 
 /* CLASSES SPECIFIQUES */
 
-.about_cats {
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.about_cats_about {
+    display: grid;
+    gap: 0.5rem 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.about_cats_adopt {
     display: grid;
     gap: 0.5rem 0.5rem;
     grid-template-columns: repeat(3, 1fr);
@@ -304,14 +319,18 @@ form {
 }
 
 input,
-select,
 textarea {
     font-family: "Quicksand", sans-serif;
     font-size: 1rem;
     width: 95%;
     padding: 3%;
-    border:none;
+    border: none;
     border-radius: 12px;
+}
+
+input,
+textarea::placeholder {
+    font-size: 0.9rem;
 }
 
 input[type="checkbox"] {
@@ -320,8 +339,108 @@ input[type="checkbox"] {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+@media only screen and (max-width: 430px) {
+    body {
+        grid-template-rows: 180px 325px 1fr 1fr 1fr 180px;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "main main main main main main"
+            "main main main main main main"
+            "main main main main main main"
+            "main main main main main main"
+            "footer footer footer footer footer footer"
+        ;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    header {
+        font-size: 2rem;
+    }
+
+    header img {
+        width: 100px;
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 4%;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    footer img {
+        height: 60px;
+    }
+
+    footer i {
+        font-size: 0.85rem;
+    }
+
+    iframe {
+        width: 260px;
+        height: 260px;
+    }
+
+    .about_cats_about {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem 0.5rem;
+    }
+
+    .about_cats_adopt {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem 0.5rem;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem 0.25rem;
+    }
+
+    .hot {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cold {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sweet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .salty {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #center_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        width: 75%;
+    }
 }
