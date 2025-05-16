@@ -50,6 +50,11 @@ h3 {
 }
 
 /* STYLE */
+
+html, body {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FAF9F6;
     color: #A8937C;
@@ -157,10 +162,6 @@ footer a:hover {
     color: #e4b2b2;
 }
 
-footer img {
-    height: 50px;
-}
-
 iframe {
     border-radius: 12px;
 }
@@ -246,6 +247,10 @@ iframe {
     text-decoration: none;
     padding: 0.5rem;
     color: #e4b2b2;
+}
+
+.scroll-up {
+    text-align: center;
 }
 
 /* SECTIONS */
