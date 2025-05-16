@@ -161,7 +161,7 @@ footer img {
     height: 50px;
 }
 
-iframe{
+iframe {
     border-radius: 12px;
 }
 
@@ -261,7 +261,10 @@ iframe{
     ;
 }
 
-.hot, .cold, .sweet, .salty {
+.hot,
+.cold,
+.sweet,
+.salty {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -378,29 +381,18 @@ input[type="checkbox"] {
     #menu {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 0.25rem 0.25rem;
     }
 
-    .hot {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cold {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .sweet {
-        display: flex;
-        flex-direction: column;
-    }
-
+    .hot,
+    .cold,
+    .sweet,
     .salty {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        padding: 1%;
+        font-size: 1rem;
     }
 
     #center_menu {
@@ -411,6 +403,6 @@ input[type="checkbox"] {
     }
 
     form {
-        width: 75%;
+        width: 80%;
     }
 }
